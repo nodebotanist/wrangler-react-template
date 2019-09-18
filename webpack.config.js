@@ -2,10 +2,11 @@ const path = require("path");
 
 module.exports = {
 	entry: "./index.js",
-	mode: "production",
+	mode: "development",
 	optimization: {
-		minimize: true
+		minimize: false
 	},
+	devtool: 'cheap-module-source-map',
 	performance: {
 		hints: false
 	},
